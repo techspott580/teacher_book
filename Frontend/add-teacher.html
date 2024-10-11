@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add Teacher</title>
+</head>
+<body>
+    <header>
+        <h1>Add Teacher</h1>
+    </header>
+    <main>
+        <form id="teacher-form">
+            <label for="teacher-name">Name:</label>
+            <input type="text" id="teacher-name" required>
+            <label for="teacher-position">Position:</label>
+            <input type="text" id="teacher-position" required>
+            <label for="teacher-salary">Salary:</label>
+            <input type="number" id="teacher-salary" required>
+            <button type="submit">Add Teacher</button>
+            <button id="view-teachers">View Teachers</button>
+        </form>
+        <div id="add-message"></div>
+
+        
+        
+        <!-- This section will display the list of teachers -->
+        <div id="teachers-list-section" style="display:none;">
+            <h2>Teachers List</h2>
+            <ul id="teacherList"></ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Salary Book. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,117 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes full height */
+}
+
+header {
+    background-color: #112412;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1; /* Allow main to take remaining space */
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centering the form */
+    align-items: center; /* Centering vertically */
+}
+
+h2 {
+    color: #333;
+}
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+    padding: 120px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #E4E0E1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Animation */
+}
+
+form:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Add some border radius for a softer look */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px; /* Add border radius for buttons */
+    transition: background-color 0.3s; /* Animation for button */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
